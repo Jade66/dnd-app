@@ -18,19 +18,7 @@ module.exports = {
     },
 
     module: {
-        rules: [
-            {
-                test: /\.css$/,
-                exclude: /(node_modules|bower_components|build)/,
-                use: ['style-loader','css-loader']
-            }
-        ],
         loaders: [
-            {
-                test: /\.css$/,
-                exclude: /(node_modules|bower_components|build)/,
-                use: {loader:'css-loader'}
-            },
             {
                 test: /\.js$/,
                 exclude: /(node_modules|bower_components|build)/,

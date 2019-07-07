@@ -2,9 +2,11 @@ import React from 'react';
 
 
 
-const Number = ({onChange, numberOfObjects}) => {
+const Number = ({ onChange, numberOfObjects }) => {
     return (
-        <input id='number-of-objects' onChange={onChange} value={numberOfObjects} />
+        <div>
+            <label>Number of Objects:</label><input id='number-of-objects' onChange={onChange} value={numberOfObjects} />
+        </div>
     );
 };
 

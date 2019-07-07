@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Results = ({numberOfHits, totalDamage}) => {
-    return(
-        <div>
-            <div><label>Hits: </label><span>{numberOfHits}</span></div>
+const Results = ({ numberOfHits, totalDamage, runReport }) => {
+    return (
+        <div style={{ flexDirection: 'column' }}>
+            <div>{runReport}</div>
             <div><label>Total Damage: </label><span>{totalDamage}</span></div>
+            <div>{runReport}</div>
         </div>
     );
 };
